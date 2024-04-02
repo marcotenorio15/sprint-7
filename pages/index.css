@@ -1,0 +1,44 @@
+@import url('/vendor/normalice.css');
+@import url('/bloks/page/page.css');
+@import url('/vendor/init.css');
+@import url('/bloks/header/header.css');
+
+@import url('/bloks/card/__delete-button/card__delete-button.css');
+@import url('/bloks/card/__image/card__image.css');
+@import url('/bloks/card/__information/card__information.css');
+@import url('/bloks/cards/__container/cards__container.css');
+@import url('/bloks/cards/__container/cards.css');
+@import url('/bloks/footer/__copyright/footer__copyright.css');
+@import url('/bloks/footer/footer.css');
+@import url('/bloks/header/header.css');
+@import url('/bloks/header/__logo/header__logo.css');
+@import url('/bloks/page/page.css');
+
+@import url('/bloks/popup/__disabled/popup__button_disabled.css');
+@import url('/bloks/popup/__button/popup__button.css');
+@import url('/bloks/popup/__caption/popup__caption.css');
+@import url('/bloks/popup/__close-button/popup__close-button.css');
+@import url('/bloks/popup/__container/_role-image/popup__container_role-image.css');
+@import url('/bloks/popup/__container/popup__container.css');
+@import url('/bloks/popup/__error/_visible/popup__error_visible.css');
+@import url('/bloks/popup/__error/popup__error.css');
+@import url('/bloks/popup/__field/popup__field.css');
+@import url('/bloks/popup/__figure/popup__figure.css');
+@import url('/bloks/popup/__form/popup__form.css');
+@import url('/bloks/popup/__image/popup__image.css');
+@import url('/bloks/popup/__input/popup__input.css');
+@import url('/bloks/popup/__title/popup__title.css');
+@import url('/bloks/popup/__opened/popup_opened.css');
+@import url('/bloks/popup/popup.css');
+
+@import url('/bloks/profile/__add-button/profile__add-button.css');
+@import url('/bloks/profile/__avatar-overlay/profile__avatar-overlay.css');
+@import url('/bloks/profile/__avatar-wrapper/profile__avatar-wrapper.css');
+@import url('/bloks/profile/__container/profile__container.css');
+@import url('/bloks/profile/__edit-button/profile__edit-button.css');
+@import url('/bloks/profile/__image/profile__image.css');
+@import url('/bloks/profile/__information/profile__information.css');
+@import url('/bloks/profile/__profession/profile__profession.css');
+@import url('/bloks/profile/__user/profile__user.css');
+@import url('/bloks/profile/__wrap/profile__wrap.css');
+@import url('/bloks/profile/profile.css');

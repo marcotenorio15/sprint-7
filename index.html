@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Responsive" />
+    <meta name="author" content="Firoh" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alrededor de los EEUU</title>
+    <link rel="stylesheet" href="./pages/index.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img
+        src="images/Vector.png"
+        alt="logo around the u.s."
+          class="header__logo" />
+      </header>
+      <main class="content">
+        <section class="profile">
+          <div class="profile__container">
+            <div class="profile__avatar-wrapper">
+              <img
+                src="images/Avatar.png"
+                alt="Profile Pic"
+                class="profile__image" />
+              <div class="profile__avatar-overlay"></div>
+            </div>
+            <div class="profile__information">
+              <div class="profile__wrap">
+                <h1 class="profile__user">Jacques Cousteau</h1>
+                <button
+                  type="button"
+                  class="profile__edit-button"
+                  aria-label="edit profile button"></button>
+              </div>
+              <p class="profile__profession">Explorador</p>
+            </div>
+          </div>
+          <button type="button" class="profile__add-button" aria-label="add button"></button>
+        </section>
+        <section class="cards">
+          <ul class="cards__container"></ul>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">&copy; Alrededor de los EEUU</p>
+      </footer>
+      <!-- Edit Profile-->
+      <section class="popup popup_edit_profile">
+        <div class="popup__container">
+          <button type="button" class="popup__close-button" aria-label="close button"></button>
+          <h3 class="popup__title">Editar Perfil</h3>
+          <form class="popup__form popup__form_type_edit" action="#" name="edit" novalidate>
+            <label class="popup__field" for="popup-input-name">
+              <input
+                type="text"
+                name="name"
+                placeholder="Nombre"
+                id="popup-input-name"
+                class="popup__input popup__input_type_name"
+                minlength="2"
+                maxlength="40"
+                required />
+              <span class="popup__error popup-input-name-error"
+                >Por favor, rellena este campo.</span
+              >
+            </label>
+            <label class="popup__field" for="popup-input-about">
+              <input
+                type="text"
+                name="about"
+                placeholder="Ocupación"
+                id="popup-input-about"
+                class="popup__input popup__input_type_about"
+                minlength="2"
+                maxlength="200"
+                required />
+              <span class="popup__error popup-input-about-error"
+                >Por favor, rellena este campo.</span
+              >
+            </label>
+            <button
+              type="submit"
+              class="popup__button popup__button_type_edit"
+              aria-label="save button"
+              data-textcontent="Guardar">
+              Guardar
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- Edit Image Profile -->
+      <section class="popup popup_image_profile">
+        <div class="popup__container">
+          <button type="button" class="popup__close-button" aria-label="close button"></button>
+          <h3 class="popup__title">Cambiar foto de Perfil</h3>
+          <form
+            class="popup__form popup__form_type_profile-image"
+            action="#"
+            name="image"
+            novalidate>
+            <label class="popup__field" for="popup-input-image">
+              <input
+                type="url"
+                name="image-link"
+                placeholder="Imagen URL"
+                id="popup-input-image"
+                class="popup__input"
+                value
+                required />
+              <span class="popup__error popup-input-image-error">Introduce una dirección web.</span>
+            </label>
+            <button
+              type="submit"
+              class="popup__button popup__button_type_profile-image"
+              aria-label="save button"
+              data-textcontent="Guardar">
+              Guardar
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- Add new place -->
+      <section class="popup popup_add_card">
+        <div class="popup__container">
+          <button
+            type="button"
+            class="popup__close-button popup__card-close-button"
+            aria-label="close button"></button>
+          <h3 class="popup__title">Nuevo Lugar</h3>
+          <form
+            class="popup__form popup__form_type_add-image"
+            action="#"
+            name="place"
+            id="form-card"
+            novalidate>
+            <label class="popup__field" for="popup-input-title">
+              <input
+                type="text"
+                name="title"
+                placeholder="Titulo"
+                id="popup-input-title"
+                class="popup__input"
+                minlength="2"
+                maxlength="30"
+                required />
+              <span class="popup__error popup-input-title-error"
+                >Por favor, rellena este campo.</span
+              >
+            </label>
+            <label class="popup__field" for="popup-input-link">
+              <input
+                type="url"
+                name="image-link"
+                placeholder="Imagen URL"
+                id="popup-input-link"
+                class="popup__input"
+                value
+                required />
+              <span class="popup__error popup-input-link-error"
+                >Por favor, introduce una dirección web.</span
+              >
+            </label>
+            <button
+              type="submit"
+              class="popup__button popup__create-card-button"
+              aria-label="create button"
+              data-textcontent="Crear">
+              Crear
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- Delete Card -->
+      <section class="popup popup_delete_card">
+        <div class="popup__container">
+          <button
+            type="button"
+            class="popup__close-button popup__delete-close-button"
+            aria-label="close button"></button>
+          <h3 class="popup__title">¿Estás seguro?</h3>
+          <form class="popup__form" action="#" name="delete" novalidate>
+            <button
+              type="submit"
+              class="popup__button popup__button_type_delete"
+              aria-label="delete button"
+              data-textcontent="Sí">
+              Sí
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- Preview Card Images -->
+      <section class="popup popup_preview_image">
+        <div class="popup__container popup__container_role-image">
+          <figure class="popup__figure">
+            <img src=" " alt="#" class="popup__image" />
+            <figcaption class="popup__caption"></figcaption>
+          </figure>
+          <button
+            type="button"
+            class="popup__close-button popup__preview-close-button"
+            aria-label="close button"></button>
+        </div>
+      </section>
+    </div>
+    <!-- Template Cards -->
+    <template class="card-template" id="card-template-add">
+      <li class="card">
+        <button type="button" class="card__delete-button" aria-label="trash button"></button>
+        <img src=" " alt="#" class="card__image" />
+        <div class="card__information">
+          <h2 class="card__title"></h2>
+          <div class="card__like-container">
+            <button type="button" class="card__like-button" aria-label="Like button"></button>
+            <p class="card__like-counter">0</p>
+          </div>
+        </div>
+      </li>
+    </template>
+  </body>
+</html>
